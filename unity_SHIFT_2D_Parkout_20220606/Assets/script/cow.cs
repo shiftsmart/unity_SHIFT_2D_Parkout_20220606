@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class cow : MonoBehaviour
 {
+    public bool isGround = false;
 
     public float jumpheight = 10;
     public float speed = 700;
@@ -21,11 +22,12 @@ public class cow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
  
 
-            Move(1);
+        Move(10);
    
-     
+            if (!isGround) anim.SetBool("jump", false);
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -49,5 +51,18 @@ public class cow : MonoBehaviour
  
     }
 
- 
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+
+
+        isGround = true;
+
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        isGround = false;
+
+    }
+
 }

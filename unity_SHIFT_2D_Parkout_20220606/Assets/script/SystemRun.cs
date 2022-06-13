@@ -29,7 +29,13 @@ namespace SHIFT
 
 
         #region 事件:程式入口
+        private void Awake()
+        {
+       
+     ani = GetComponent<Animator>();
 
+
+        }
         private void Start()
         {
             print("安安，世界"); 
@@ -38,7 +44,7 @@ namespace SHIFT
         private void Update()
         {
 
-            print("<color=red>yaaaaa</color>");
+          //  print("<color=red>yaaaaa</color>");
 
 
         }

@@ -50,13 +50,14 @@ public class APITry : MonoBehaviour
 
         //print(Random.Range(1, 5));
 
-
+        print(Vector3.Distance(new Vector3(1, 1, 1), new Vector3(22, 22, 22)));
         #endregion
         print("經過時間: " + Time.time);
 
+        print("遊戲經過時間: " + Time.timeSinceLevelLoad);
 
         print("有按下任何鍵嗎?: " + Input.anyKey);
-        if (Input.GetKey(KeyCode.Space)) {
+        if (Input.GetKeyDown(KeyCode.Space)) {
             print("我按空白了 " );
         }
     }

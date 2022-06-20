@@ -36,7 +36,7 @@ public class APITry : MonoBehaviour
         Time.timeScale = 0.5f;
         Vector3.Distance(new Vector3(1, 1, 1), new Vector3(22, 22, 22));
         Mathf.RoundToInt(9.999f);
-        Application.OpenURL("https://unity.com/" );
+       // Application.OpenURL("https://unity.com/" );
     }
 
     // Update is called once per frame

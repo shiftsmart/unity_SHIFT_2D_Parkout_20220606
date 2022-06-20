@@ -287,6 +287,7 @@ GameObject:
   - component: {fileID: 511315929}
   - component: {fileID: 511315931}
   - component: {fileID: 511315932}
+  - component: {fileID: 511315933}
   m_Layer: 0
   m_Name: Minotaur - Sprite Sheet_5
   m_TagString: Untagged
@@ -430,8 +431,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd7162a3e387ab740be8efb8a9d78852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speeRun: 48.4
-  heightJump: 350
+  speeRun: 3.2
+  heightJump: 3
+--- !u!114 &511315933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511315925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 942829852d86e5f4eba910cc3ede3267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heightJump: 292
 --- !u!1 &643020538
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,6 +501,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1212467427}
   - component: {fileID: 1212467426}
+  - component: {fileID: 1212467428}
   m_Layer: 0
   m_Name: test
   m_TagString: Untagged
@@ -501,7 +516,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212467425}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7bbd4588814cc83418b52e9ef8f5285a, type: 3}
   m_Name: 
@@ -522,6 +537,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1212467428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212467425}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df7a999a5458b6640a9382a196d140c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cow: {fileID: 511315925}
+  startpoint: {fileID: 511315928}
 --- !u!1 &1373166547
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,6 +10,8 @@ public class cow : MonoBehaviour
     public float speed = 700;
     public Rigidbody2D body;
     public Animator anim;
+
+
     // Start is called before the first frame update
     void Start()
     {

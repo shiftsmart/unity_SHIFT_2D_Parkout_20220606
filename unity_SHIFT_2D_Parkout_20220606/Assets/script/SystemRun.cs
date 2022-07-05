@@ -19,6 +19,11 @@ namespace SHIFT
         private Animator ani;
         private Rigidbody2D rig;
 
+
+
+
+
+
         #endregion
 
         #region 功能:實作該系統的複雜方法
@@ -27,7 +32,7 @@ namespace SHIFT
         private void run()
         {
 
-            print("跑步中");
+         //   print("跑步中");
             rig.velocity = new Vector2(speeRun,rig.velocity.y);
         }
 
@@ -53,7 +58,7 @@ namespace SHIFT
         }
         private void Start()
         {
-            print("安安，世界");
+        //    print("安安，世界");
         }
 
         private void Update()
@@ -67,5 +72,9 @@ namespace SHIFT
 
         #endregion
 
+        public void OnDisable()
+        {
+            rig.velocity = new Vector2(0,0);
+        }
     }
 }
